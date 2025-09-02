@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Tapestral</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+.about-hero {
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.about-title {
+  position: relative;
+  z-index: 2;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.about-tagline {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 16px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-text ul {
+  margin-top: 12px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.about-text ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+}
+
+.about-text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #777;
+}
+
+.founder-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.founder-card {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.founder-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.founder-title {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.combined-exp {
+  margin-top: 24px;
+  font-style: italic;
+  color: #555;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 40px 16px;
+  background: #f8f8f8;
+  font-size: 14px;
+  color: #555;
+}
+
+.about-footer a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+.about-footer a:hover {
+  text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+  .founder-cards {
+    flex-direction: row;
+  }
+  .founder-card {
+    flex: 1;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="hero-header">
+      <nav>
+        <div class="nav-container">
+          <div class="nav-content">
+            <div class="top-nav-row">
+              <a href="/" class="logo">Tapestral</a>
+            </div>
+            <div id="navLinks" class="nav-links">
+              <a href="/about.html">About Us</a>
+              <a href="/vendor">Become a Vendor</a>
+            </div>
+            <div class="category-bar desktop-only">
+              <a href="/about.html">About Us</a>
+              <a href="/vendor">Become a Vendor</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- About Page Content -->
+    <section class="about-hero">
+      <h1 class="about-title">About Tapestral</h1>
+      <p class="about-tagline">Elevating design. Simplifying sourcing.</p>
+    </section>
+
+    <section class="about-content">
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>
+          Tapestral is built to empower interior designers by streamlining access to curated, high-quality furniture direct from manufacturers.
+          We eliminate friction in sourcing, quoting, and order management — so you can stay focused on delivering exceptional spaces.
+        </p>
+
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Direct-to-designer access to vetted manufacturers</li>
+          <li>The Gallery, organize and present curated selections</li>
+          <li>Transparent order tracking and downloadable documents</li>
+          <li>Simple pricing, clear terms, and designer-focused service</li>
+        </ul>
+
+        <h2>Our Founders</h2>
+        <div class="founder-cards">
+          <div class="founder-card">
+            <h3>Kenny Goodin</h3>
+            <p class="founder-title">Chief Technology Officer</p>
+            <p>
+              With a decade of experience in software engineering, Kenny specializes in developing high-performance systems 
+              and scalable platforms. From real-time applications to infrastructure design, his focus ensures Tapestral runs fast, 
+              reliably, and securely.
+            </p>
+          </div>
+          <div class="founder-card">
+            <h3>Dylan LaMott</h3>
+            <p class="founder-title">Chief Strategy Officer</p>
+            <p>
+              Combining a background in cybersecurity and logistics, Dylan brings operational expertise and deep industry insight 
+              from years working with manufacturers and scaling supply chains. He ensures Tapestral is built to serve real B2B needs.
+            </p>
+          </div>
+        </div>
+
+        <p class="combined-exp">
+          With over 15 years of combined experience in software, logistics, and security, the Tapestral founding team is uniquely positioned 
+          to bring speed, trust, and clarity to the furniture sourcing process.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-footer">
+      <p>Questions? Reach out at <a href="mailto:support@tapestral.com">support@tapestral.com</a></p>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="/about.html">About Us</a>
+          <a href="/terms-of-service">Terms of Service</a>
+        </div>
+        <div class="footer-copy">
+          &copy; <span id="year"></span> Tapestral. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
