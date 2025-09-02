@@ -1,4 +1,10 @@
+User-agent: googlebot
+User-agent: google
+User-agent: bingbot
+User-agent: bing
+Disallow: 
+
 User-agent: *
-Disallow:
+Disallow: /
 
 Sitemap: https://www.tapestral.com/sitemap.xml
