@@ -188,6 +188,47 @@
       .hamburger { display: block; }
     }
 
+        /* Features Section */
+    .features {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:2rem;
+      padding:4rem 2rem;
+      text-align:center;
+    }
+    .feature-card {
+      background:#fff;
+      border:1px solid #ddd;
+      border-radius:12px;
+      padding:2rem;
+      flex:1 1 250px;
+      max-width:300px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.05);
+      transition:transform 0.3s ease;
+    }
+    .feature-card:hover { transform: translateY(-5px); }
+    .feature-card h3 { font-size:1.3rem; margin-bottom:0.5rem; }
+    .feature-card p { font-size:1rem; color:#555; }
+
+    /* CTA Section */
+    .cta-section {
+      text-align:center;
+      padding:3rem 2rem;
+      background:#f8f8f8;
+    }
+    .cta-button {
+      display:inline-block;
+      background:black;
+      color:white;
+      padding:1rem 2rem;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background 0.3s ease;
+    }
+    .cta-button:hover { background:grey; }
+
     /* Footer */
     .footer {
       background-color: #f1f1f1;
@@ -257,8 +298,45 @@
 
     <main>
       <section style="padding: 4rem; text-align: center;">
-        <h1>Something Awesome is Coming</h1>
-        <p>Stay tuned while we prepare Tapestral for launch.</p>
+        <h1>Access is Coming Soon</h1>
+        <p>We’re crafting a better way for interior designers to source products directly from their favorite vendors. Stay tuned for launch updates.</p>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <h3>Designer Pricing</h3>
+          <p>Access designer pricing directly from vendors.</p>
+        </div>
+        <div class="feature-card">
+          <h3>No Cost to Use</h3>
+          <p>Tapestral is free for interior designers — no subscription fees.</p>
+        </div>
+        <div class="feature-card">
+          <h3>No Credit Card Fees</h3>
+          <p>We make payments easy with ACH processing — no hidden charges or extra costs.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Direct Access to Vendors</h3>
+          <p>Communicate with trusted vendors directly, ensuring quality and transparency.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Fast, Reliable Technology</h3>
+          <p>Our platform is built for speed and stability, letting you browse and order seamlessly.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Secure Software</h3>
+          <p>All transactions and data are protected with enterprise-grade security standards.</p>
+        </div>
+        <div class="feature-card">
+          <h3>24/7 Support</h3>
+          <p>Our team is here to help whenever you need assistance with sourcing or orders.</p>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>Learn More About Tapestral</h2>
+          <p>We’re building a platform to simplify sourcing for interior designers. Read about our mission and our founders.</p>
+        <a href="about.html" class="cta-button">About Us</a>
       </section>
 
       <footer class="footer">
