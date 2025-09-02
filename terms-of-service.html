@@ -11,6 +11,7 @@
     gtag('config', 'G-4TVK733BFR');
   </script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tapestral – Terms of Service</title>
   <style>
   body {
@@ -29,83 +30,117 @@
     padding-top: 0;
   }
 
-  .nav-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    /* Hero Section */
+    .hero-header {
+      position: relative;
+      height: 70vh;
+      background-image: url("images/tapestral_header.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-  .nav-content {
-    display: flex;
-    flex-direction: column;
-  }
+    .hero-header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+    }
 
-  .top-nav-row {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    margin-top: 12px;
-    color: white;
-  }
+    .hero-overlay {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* title in center, nav bottom */
+      align-items: center;
+      padding: 2rem;
+      color: white;
+    }
 
-  .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    white-space: nowrap;
-    width: fit-content;
-  }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: bold;
+      margin: auto 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      color: #f1f1f1;
+    }
 
-  .hamburger {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
+    .hero-title a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    color: white;
-  }
+    /* Desktop Nav */
+    .hero-nav {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
 
-  .nav-links a {
-    color: #525252;
-    text-decoration: none;
-    padding: 8px 12px;
-    display: flex;
-    align-items: center;
-  }
+    .hero-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-  .hero-header {
-    position: relative;
-    height: 50vh; /* half viewport height */
-    background-image: url("images/tapestral_header.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+    .hero-nav a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
 
-  .hero-header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
+    /* Mobile Hamburger */
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 3;
+    }
 
-  nav {
-    position: relative;
-    z-index: 2;
-    background-color: transparent;
-    border-bottom: none;
-    padding: 0;
-  }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 16px;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 3;
+    }
+
+    .mobile-nav a {
+      color: black;
+      text-decoration: none;
+      padding: 0.5rem 0;
+    }
+
+    .mobile-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-nav { display: none; }
+      .hamburger { display: block; }
+    }
 
   /* Mobile styles */
   @media (max-width: 768px) {
@@ -136,39 +171,6 @@
   @media (min-width: 769px) {
     .desktop-only {
       display: flex;
-    }
-
-    .category-bar {
-      gap: 12px;
-      padding: 8px 12px 8px 0;
-      background-color: rgba(255, 255, 255, 0.25);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      width: 100vw;
-      box-sizing: border-box;
-      display: flex;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 3;
-      color: white;
-    }
-
-    .category-bar a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      padding: 8px 12px;
-      font-size: 14px;
-      font-weight: 400;
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    .category-bar a:hover {
-      text-decoration: underline;
     }
   }
 
@@ -271,22 +273,23 @@
 </head>
 <body>
     <div class="hero-header">
-      <nav>
-        <div class="nav-container">
-          <div class="nav-content">
-            <div class="top-nav-row">
-              <a href="index.html" class="logo">Tapestral</a>
-            </div>
-            <div id="navLinks" class="nav-links">
-              <a href="about.html">About Us</a>
-            </div>
-            <div class="category-bar desktop-only">
-              <a href="about.html">About Us</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>  
+      <div class="hero-overlay">
+        <h1 class="hero-title"><a href="index.html">Tapestral</a></h1>
+
+        <!-- Desktop Nav -->
+        <nav class="hero-nav">
+          <a href="about.html">About Us</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav id="mobileNav" class="mobile-nav">
+          <a href="about.html">About Us</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
   <div class="container">
     <h1>Terms of Service</h1>
     <p><em>Effective Date: August 2, 2025</em></p>
@@ -374,7 +377,14 @@
     </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Year auto-update
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Toggle mobile nav
+    function toggleMenu() {
+      const nav = document.getElementById("mobileNav");
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    }
   </script>
 </body>
 </html>
