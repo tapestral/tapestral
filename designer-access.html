@@ -8,13 +8,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-4TVK733BFR');
     </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tapestral – Coming Soon</title>
+    <title>Designer Request Access – Tapestral</title>
 
     <style>
         body {
@@ -63,7 +61,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            /* title in center, nav bottom */
             align-items: center;
             padding: 2rem;
             color: white;
@@ -203,61 +200,31 @@
             }
         }
 
-        /* Features Section */
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            padding: 4rem 2rem;
+        /* Form Section */
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
 
-        .feature-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 2rem;
-            flex: 1 1 250px;
-            max-width: 300px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+        .form-wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 1600px;
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-card p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            text-align: center;
-            padding: 3rem 2rem;
-            background: #f8f8f8;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: black;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: grey;
+        .form-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 1600px;
+            border: none;
+            display: block;
         }
 
         /* Footer */
@@ -333,81 +300,33 @@
         </div>
 
         <main>
-            <section style="padding: 4rem; text-align: center;">
-                <h1>Access is Coming Soon</h1>
-                <p>We’re crafting a better way for interior designers to source products directly from their favorite
-                    vendors. Stay tuned for launch updates.</p>
-            </section>
-
-            <section style="padding: 4rem 2rem; text-align: center;">
-                <h1 style="margin-bottom: 2rem;">Key Features</h1>
-                <div class="features">
-                    <div class="feature-card">
-                        <h3>Designer Pricing</h3>
-                        <p>Access designer pricing directly from vendors.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>No Cost to Use</h3>
-                        <p>Tapestral is free for interior designers — no subscription fees.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>No Credit Card Fees</h3>
-                        <p>We make payments easy with ACH processing — no hidden charges or extra costs.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Direct Access to Vendors</h3>
-                        <p>Purchase pieces from trusted vendors directly, ensuring quality and transparency.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Fast, Reliable Technology</h3>
-                        <p>Our platform is built for speed and stability, letting you browse and order seamlessly.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Secure Software</h3>
-                        <p>All transactions and data are protected with enterprise-grade security standards.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>24/7 Support</h3>
-                        <p>Our team is here to help whenever you need assistance with sourcing or orders.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="cta-section">
-                <h2>Are you a Designer?</h2>
-                <p>Request to be notified when Tapestral is officaly launched!</p>
-                <a href="designer-access.html" class="cta-button">Request Access</a>
-            </section>
-
-            <section class="cta-section">
-                <h2>Are you a Vendor?</h2>
-                <p>Jump in and start hosting your pieces</p>
-                <a href="become-a-vendor.html" class="cta-button">Become a Vendor</a>
-            </section>
-
-            <section class="cta-section">
-                <h2>Learn More About Tapestral</h2>
-                <p>We’re building a platform to simplify sourcing for interior designers. Read about our mission and our
-                    founders.</p>
-                <a href="about.html" class="cta-button">About Us</a>
-            </section>
-
-
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="about.html">About Us</a>
-                        <a href="designer-access.html">Designer access</a>
-                        <a href="become-a-vendor.html">Become a Vendor</a>
-                        <a href="terms-of-service.html">Terms of Service</a>
-                    </div>
-                    <div class="footer-copy">
-                        &copy; <span id="year"></span> Tapestral. All rights reserved.
-                    </div>
-                </div>
-            </footer>
+            <h2>Stay informed on Tapestral</h2>
+            <p style="text-align: center;">Complete the below form to be notified when Tapestral is launched anre ready
+                to go!</p>
+            <div class="form-wrapper">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSehKXJWwzsE42VJ61woIhh13w4Y2gyy8FFdPcnwpRt-hXXRuQ/viewform?embedded=true"
+                    frameborder="0" marginheight="0" marginwidth="0" loading="lazy">
+                    Loading…
+                </iframe>
+            </div>
         </main>
-    </div>
 
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="about.html">About Us</a>
+                    <a href="designer-access.html">Designer access</a>
+                    <a href="become-a-vendor.html">Become a Vendor</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-copy">
+                    &copy; <span id="year"></span> Tapestral. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div>
     <script>
         // Year auto-update
         document.getElementById("year").textContent = new Date().getFullYear();
