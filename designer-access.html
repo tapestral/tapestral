@@ -14,22 +14,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Interior designers can request early access to Tapestral, the new sourcing platform that offers direct vendor access and exclusive pricing.">
+    <meta name="description"
+        content="Interior designers can request to know when Tapestral launches, the new sourcing platform that offers direct vendor access and exclusive pricing.">
     <meta name="author" content="Tapestral">
     <meta name="robots" content="all">
     <link rel="canonical" href="https://tapestral.com/designer-access.html">
+    <link rel="icon" href="https://www.tapestral.com/images/favicon.ico">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Request Designer Access – Tapestral">
-    <meta property="og:description" content="Join the waitlist to get exclusive access to Tapestral. Simplify sourcing and get direct vendor pricing.">
+    <meta property="og:description"
+        content="Join the waitlist to know when Tapestral launches. Simplify sourcing and get direct vendor pricing.">
     <meta property="og:url" content="https://tapestral.com/designer-access.html">
     <meta property="og:image" content="https://tapestral.com/images/tapestral_header.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Request Designer Access – Tapestral">
-    <meta name="twitter:description" content="Get early access to the Tapestral platform built for interior designers.">
+    <meta name="twitter:description" content="Join the waitlist to know when Tapestral launches. Simplify sourcing and get direct vendor pricing.">
     <meta name="twitter:image" content="https://tapestral.com/images/tapestral_header.png">
 
     <style>
@@ -82,16 +85,35 @@
             align-items: center;
             padding: 2rem;
             color: white;
+            text-align: center;
+        }
+
+        .hero-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
         }
 
         .hero-title {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
             font-weight: bold;
-            margin: auto 0;
+            margin-bottom: 0.5rem;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
             color: #f1f1f1;
         }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0;
+            color: #f5f5f5;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+        }
+
 
         .hero-title a {
             color: inherit;
@@ -226,9 +248,57 @@
         }
 
         h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .designer-hero {
+            padding: 80px 20px;
             text-align: center;
+            position: relative;
+        }
+
+        .designer-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .designer-title {
+            position: relative;
+            z-index: 2;
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+
+        .highlight-box {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #111;
+        }
+
+        .highlight-box ul {
+            margin: 12px 0 0;
+            padding-left: 20px;
+        }
+
+        .highlight-box ul li {
+            margin-bottom: 10px;
+            color: #555;
         }
 
         .form-wrapper {
@@ -292,11 +362,15 @@
     <div class="site-wrapper">
         <div class="hero-header">
             <div class="hero-overlay">
-                <h1 class="hero-title"><a href="index.html">Tapestral</a></h1>
+                <div class="hero-center">
+                    <h1 class="hero-title"><a href="index.html">Tapestral</a></h1>
+                    <h2 class="hero-subtitle">Browse brilliance. Place with confidence.</h2>
+                </div>
 
                 <!-- Desktop Nav -->
                 <nav class="hero-nav">
                     <a href="about.html">About Us</a>
+                    <a href="why-tapestral.html">Why Tapestral</a>
                     <a href="designer-access.html">Designer access</a>
                     <a href="become-a-vendor.html">Become a Vendor</a>
                     <a href="terms-of-service.html">Terms of Service</a>
@@ -310,6 +384,7 @@
                 </button>
                 <nav id="mobileNav" class="mobile-nav">
                     <a href="about.html">About Us</a>
+                    <a href="why-tapestral.html">Why Tapestral</a>
                     <a href="designer-access.html">Designer access</a>
                     <a href="become-a-vendor.html">Become a Vendor</a>
                     <a href="terms-of-service.html">Terms of Service</a>
@@ -317,10 +392,29 @@
             </div>
         </div>
 
+        <section class="designer-hero">
+            <h2 class="designer-title">Design with Tapestral</h2>
+        </section>
+
         <main>
-            <h2>Stay informed on Tapestral</h2>
-            <p style="text-align: center;">Complete the below form to be notified when Tapestral is launched and ready
-                to go!</p>
+            <h2>Stay informed</h2>
+            <p>
+                Tapestral is transforming how designers source furniture — connecting you to trusted vendors
+                and streamlining every step from browsing to ordering. Sign up to be notified when designer registration
+                opens.
+            </p>
+
+            <div class="highlight-box">
+                <h3>Why Designers Will Benefit</h3>
+                <ul>
+                    <li>No subscriptions.</li>
+                    <li>No Credit-Card or ACH processing fees.</li>
+                    <li>Explore trusted vendor catalogs in one place.</li>
+                    <li>Receive clear order confirmations and tracking updates.</li>
+                    <li>Focus on design, while we simplify sourcing and ordering.</li>
+                </ul>
+            </div>
+
             <div class="form-wrapper">
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSehKXJWwzsE42VJ61woIhh13w4Y2gyy8FFdPcnwpRt-hXXRuQ/viewform?embedded=true"
@@ -334,6 +428,7 @@
             <div class="footer-content">
                 <div class="footer-links">
                     <a href="about.html">About Us</a>
+                    <a href="why-tapestral.html">Why Tapestral</a>
                     <a href="designer-access.html">Designer access</a>
                     <a href="become-a-vendor.html">Become a Vendor</a>
                     <a href="terms-of-service.html">Terms of Service</a>

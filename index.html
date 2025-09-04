@@ -19,7 +19,8 @@
     <!-- Primary Meta Tags -->
     <title>Furniture for Interior Designers - Tapestral</title>
     <meta name="title" content="Furniture for Interior Designers - Tapestral">
-    <meta name="description" content="Tapestral is a sourcing platform built for interior designers. Purchase directly from trusted vendors, get designer pricing, and simplify your workflow. Launching soon!">
+    <meta name="description"
+        content="Tapestral is a sourcing platform built for interior designers. Purchase directly from trusted vendors, get designer pricing, and simplify your workflow. Launching soon!">
     <meta name="author" content="Tapestral">
     <meta name="robots" content="all">
 
@@ -31,14 +32,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.tapestral.com/">
     <meta property="og:title" content="Furniture for Interior Designers - Tapestral">
-    <meta property="og:description" content="We’re crafting a better way for interior designers to source products directly from their favorite vendors. Request early access today.">
+    <meta property="og:description"
+        content="We’re crafting a better way for interior designers to source products directly from their favorite vendors. Request early access today.">
     <meta property="og:image" content="https://www.tapestral.com/images/tapestral_header.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.tapestral.com/">
     <meta property="twitter:title" content="Furniture for Interior Designers - Tapestral">
-    <meta property="twitter:description" content="A better way for interior designers to purchase from vendors. Tapestral is launching soon.">
+    <meta property="twitter:description"
+        content="A better way for interior designers to purchase from vendors. Tapestral is launching soon.">
     <meta property="twitter:image" content="https://www.tapestral.com/images/tapestral_header.png">
 
     <!-- Structured Data / Schema.org -->
@@ -101,19 +104,36 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            /* title in center, nav bottom */
             align-items: center;
             padding: 2rem;
             color: white;
+            text-align: center;
+        }
+
+        .hero-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
         }
 
         .hero-title {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
             font-weight: bold;
-            margin: auto 0;
+            margin-bottom: 0.5rem;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
             color: #f1f1f1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0;
+            color: #f5f5f5;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
         }
 
         .hero-title a {
@@ -345,11 +365,15 @@
     <div class="site-wrapper">
         <div class="hero-header">
             <div class="hero-overlay">
-                <h1 class="hero-title"><a href="index.html">Tapestral</a></h1>
+                <div class="hero-center">
+                    <h1 class="hero-title"><a href="index.html">Tapestral</a></h1>
+                    <h2 class="hero-subtitle">Elevating design. Simplifying sourcing.</h2>
+                </div>
 
                 <!-- Desktop Nav -->
                 <nav class="hero-nav">
                     <a href="about.html">About Us</a>
+                    <a href="why-tapestral.html">Why Tapestral</a>
                     <a href="designer-access.html">Designer access</a>
                     <a href="become-a-vendor.html">Become a Vendor</a>
                     <a href="terms-of-service.html">Terms of Service</a>
@@ -363,6 +387,7 @@
                 </button>
                 <nav id="mobileNav" class="mobile-nav">
                     <a href="about.html">About Us</a>
+                    <a href="why-tapestral.html">Why Tapestral</a>
                     <a href="designer-access.html">Designer access</a>
                     <a href="become-a-vendor.html">Become a Vendor</a>
                     <a href="terms-of-service.html">Terms of Service</a>
@@ -434,6 +459,7 @@
                 <div class="footer-content">
                     <div class="footer-links">
                         <a href="about.html">About Us</a>
+                        <a href="why-tapestral.html">Why Tapestral</a>
                         <a href="designer-access.html">Designer access</a>
                         <a href="become-a-vendor.html">Become a Vendor</a>
                         <a href="terms-of-service.html">Terms of Service</a>
